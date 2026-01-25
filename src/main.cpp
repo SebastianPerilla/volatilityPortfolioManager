@@ -1,8 +1,8 @@
-#include "extractor.h"
-#include "portfolio_manager.h"
-#include "stock_manager.h"
-#include "volatility_formula.h"
-#include "volatility_parse.h"
+// #include "extractor.h"
+// #include "portfolio_manager.h"
+// #include "stock_manager.h"
+#include "volatilityFormula.h"
+// #include "volatility_parse.h"
 #include <algorithm>
 #include <cctype>
 #include <cmath>
@@ -10,7 +10,7 @@
 #include <iostream>
 #include <limits>
 #include <map>
-#include <matplot/matplot.h>
+// #include <matplot/matplot.h>
 #include <numeric>
 #include <string>
 #include <tuple>
