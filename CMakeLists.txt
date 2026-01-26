@@ -14,7 +14,7 @@ set(CMAKE_EXPORT_COMPILE_COMMANDS ON)
 #
 # # Include FetchContent
 # include(FetchContent)
-  include_directories(${CMAKE_SOURCE_DIR}/include())
+include_directories(${CMAKE_SOURCE_DIR}/include)
 #
 # # Fetch nlohmann_json;
 # FetchContent_Declare(

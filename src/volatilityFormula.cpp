@@ -1,7 +1,8 @@
 #include "volatilityFormula.h"
+#include <cmath>
 #include <numeric>
 
-namespace VolatilityFunctions {
+namespace volFormula {
 
     double average(std::vector<double> &returnList) {
         double avg = std::accumulate(returnList.begin(), returnList.end(), 0.0) / returnList.size();
@@ -18,7 +19,7 @@ namespace VolatilityFunctions {
 
         // Using a regular iterator to loop through all the initial prices
         for (std::vector<double>::iterator it = price.begin(); it != price.end() - 1; ++it) {
-            double r_t = log(*(it + 1) / *it);
+            double r_t = std::log(*(it + 1) / *it);
             rTlist.push_back(r_t);
         }
         return rTlist; // Assuming you want to return the average of r_t_list
@@ -54,4 +55,4 @@ namespace VolatilityFunctions {
         return std::sqrt(new_variance);
     };
 
-} // namespace VolatilityFunctions
+} // namespace volFormula

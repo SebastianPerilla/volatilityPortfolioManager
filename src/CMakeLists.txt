@@ -3,6 +3,7 @@
 # Library that implements volatilityFormula
 add_library(volatility
     volatilityFormula.cpp
+    volatilityParse.cpp
 )
 
 # Only expose the include/ directory so the header is found

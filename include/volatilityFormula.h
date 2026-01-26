@@ -1,8 +1,6 @@
-#pragma once
-
 #include <vector>
 
-namespace VolatilityFunctions {
+namespace volFormula {
 
     /**
      * @brief Calculates the average of a vector of doubles.
@@ -65,4 +63,4 @@ namespace VolatilityFunctions {
      */
     double volatilityAlgorithm(std::vector<double> &stock_prices);
 
-} // namespace VolatilityFunctions
+} // namespace volFormula
