@@ -5,7 +5,7 @@
 #include <string>
 #include <vector>
 
-namespace volFunctions {
+namespace volParsing {
 
     /**
      * @brief Computes hourly volatility for each stock ticker based on the first 6 data points.
@@ -106,4 +106,4 @@ namespace volFunctions {
         return true_volatility_output;
     };
 
-} // namespace volFunctions
+} // namespace volParsing

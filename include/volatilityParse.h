@@ -2,7 +2,7 @@
 #include <string>
 #include <vector>
 
-namespace volFunctions {
+namespace volParsing {
 
     /*
      * @brief Computes hourly volatility for each stock ticker based on the first 6 data points.
@@ -30,4 +30,4 @@ namespace volFunctions {
      */
     std::map<std::string, std::vector<double>> true_volatility(std::map<std::string, std::vector<double>> input_map,
                                                                std::map<std::string, double> standard_ticker_vol_map);
-} // namespace volFunctions
+} // namespace volParsing

@@ -4,6 +4,7 @@
 add_library(volatility
     volatilityFormula.cpp
     volatilityParse.cpp
+    extractor.cpp
 )
 
 # Only expose the include/ directory so the header is found
