@@ -22,5 +22,6 @@ add_executable(volatility_app
 target_link_libraries(volatility_app
     PRIVATE
         volatility
+        CURL::libcurl
 )
 

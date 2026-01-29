@@ -1,11 +1,10 @@
-
+#include <curl/curl.h>
 #include <fstream>
 #include <iostream>
 #include <map>
 #include <sstream>
 #include <string>
 #include <vector>
-// #include <curl/curl.h>
 // #include <nlohmann/json.hpp>
 #include <ctime>
 #include <iomanip> // For std::setprecision and std::fixed

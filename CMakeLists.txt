@@ -13,19 +13,19 @@ set(CMAKE_EXPORT_COMPILE_COMMANDS ON)
 # set(CMAKE_ARCHIVE_OUTPUT_DIRECTORY ${CMAKE_BINARY_DIR}/lib)
 #
 # # Include FetchContent
-# include(FetchContent)
+include(FetchContent)
 include_directories(${CMAKE_SOURCE_DIR}/include)
 #
-# # Fetch nlohmann_json;
-# FetchContent_Declare(
-#     json
-#     URL https://github.com/nlohmann/json/releases/download/v3.11.3/json.tar.xz
-# )
+# Fetch nlohmann_json;
+FetchContent_Declare(
+    json
+    URL https://github.com/nlohmann/json/releases/download/v3.11.3/json.tar.xz
+)
 #
-# FetchContent_MakeAvailable(json)
+FetchContent_MakeAvailable(json)
 #
 # # Find CURL
-# find_package(CURL REQUIRED)
+find_package(CURL REQUIRED)
 
 # Enable testing before adding test subdirectory
 # enable_testing()
